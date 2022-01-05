@@ -1,0 +1,12 @@
+﻿@model Deck
+
+<p>Deck Id: @Model.deck_id</p>
+<p>Sucess: @Model.success</p>
+<p>Cards Remaining: @Model.remaining</p>
+<p>Shuffled: @Model.shuffled</p>
+
+@using (Html.BeginForm("FirstDraw", "Deck"))
+{
+    <input type="hidden" name="deckID" value="@Model.deck_id" />
+    <input type="submit" value="Draw Hand" />
+}

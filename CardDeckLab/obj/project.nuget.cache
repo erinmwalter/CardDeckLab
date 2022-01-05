@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lfNmi88Jg9tpgnKlZkQv+qVoeGc/21WHhePuKh2IKpKs/u8co7zYvM+6PZd7r6zWt/IVljswlj7F/qabCPGeTw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ewalter\\source\\repos\\CardDeckLab\\CardDeckLab\\CardDeckLab.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ewalter\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,26 @@
+﻿@model PileResult
+
+<p>Cards Remaining: @Model.remaining</p>
+<p>Your Hand:</p>
+@using (Html.BeginForm("Index", "Deck", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <th>Card Name</th>
+            <th>Card Image</th>
+            <th>Discard</th>
+        </tr>
+        @foreach (Card c in Model.piles.player1.cards)
+        {
+            <tr>
+                <td>@c.value of @c.suit </td>
+                <td><img src="@c.image" /></td>
+                <td><input type="checkbox" name="discards[]" value="@c.code" id="@c.code" /></td>
+            </tr>
+        }
+    </table>
+    <br />
+    <input type="hidden" name="deckID" value="@Model.deck_id" />
+    <input type="submit" value="Draw Again" />
+
+}
